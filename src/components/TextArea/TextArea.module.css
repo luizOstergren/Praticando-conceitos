@@ -1,0 +1,143 @@
+.TextArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 3.8rem;
+  margin: 0 15rem;
+  margin-top: calc(0px - 1.5rem - 6px);
+}
+
+.task {
+  flex: 1;
+  background-color: var(--gray-500);
+  width: 30rem;
+  height: 100%;
+  padding: 1rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  color: var(--gray-100);
+  font-weight: 400;
+  display: flex;
+  resize: none;
+}
+
+.task:focus-within {
+  outline: 2px solid var(--purple-dark);
+}
+
+.task::placeholder {
+  color: var(--gray-300);
+}
+
+.button {
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 0.5rem;
+  border-radius: 8px;
+  color: var(--gray-100);
+  padding: 1rem;
+  border: none;
+  font-weight: bold;
+  height: 100%;
+}
+
+.button:hover {
+  background-color: var(--blue);
+}
+
+.area {
+  width: 5rem;
+  background-color: white;
+  height: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3.5rem 15rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  padding-bottom: 2rem;
+  color: wheat;
+}
+
+.create,
+.conclude {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 700;
+}
+
+.create span,
+.conclude span {
+  background-color: var(--gray-400);
+  border-radius: 50%;
+  color: var(--gray-200);
+  padding: 0.2rem 0.4rem;
+}
+
+.create p {
+  color: var(--blue);
+}
+
+.conclude p {
+  color: var(--purple-dark);
+}
+
+.emptyTodo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--gray-300);
+  padding: 4rem 0;
+  border-top: 1px solid var(--gray-500);
+}
+
+.emptyTodo p {
+  margin: 1.5rem 0 0.2rem 0;
+}
+
+@media (max-width: 900px) {
+  .TextArea {
+    margin: 0 7rem;
+    margin-top: calc(0px - 1.5rem - 6px);
+  }
+
+  .list {
+    margin: 3.5rem 7rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .TextArea {
+    margin: 0 4rem;
+    margin-top: calc(0px - 1.5rem - 6px);
+  }
+
+  .list {
+    margin: 3.5rem 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .TextArea {
+    margin: 0 1rem;
+    margin-top: calc(0px - 1.5rem - 6px);
+  }
+
+  .list {
+    margin: 3.5rem 1.7rem;
+  }
+}

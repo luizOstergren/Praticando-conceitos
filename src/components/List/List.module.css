@@ -1,0 +1,74 @@
+.todo {
+  background-color: var(--gray-400);
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0.7rem;
+  flex: 1;
+  color: var(--gray-100);
+}
+
+.todo + .todo {
+  margin-top: 1rem;
+}
+
+.buttonCheck {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--dark-blue);
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.buttonCheck:hover {
+  background-color: var(--blue);
+}
+
+.buttonUncheck {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--purple-dark);
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.buttonUncheck:hover {
+  background-color: var(--purple);
+}
+
+.tasks {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: var(--gray-300);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.incomplete {
+  color: var(--gray-100);
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.deleteCheck {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+  color: var(--gray-200);
+}
+
+.deleteCheck:hover {
+  color: var(--danger);
+}
